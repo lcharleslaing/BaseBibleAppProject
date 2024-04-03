@@ -1,0 +1,10 @@
+{
+	"runtime": "nodejs18.x",
+	"handler": "..\\..\\..\\..\\Sveltekit\\Sveltekit 03-23-2024 +\\BaseBibleApp\\.svelte-kit\\vercel-tmp\\index.js",
+	"launcherType": "Nodejs",
+	"experimentalResponseStreaming": true,
+	"framework": {
+		"slug": "sveltekit",
+		"version": "2.5.5"
+	}
+}
