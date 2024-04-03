@@ -1,0 +1,69 @@
+├── .env
+├── .eslintignore
+├── .eslintrc.cjs
+├── .prettierignore
+├── .prettierrc
+├── bible.db
+├── bible_1.db
+├── bible_csv_to_js_format.mjs
+├── bible_csv_to_sqlite_db.mjs
+├── package.json
+├── postcss.config.cjs
+├── prisma
+│   ├── dev.db
+│   ├── migrations
+│   │   ├── 20240403144118_init
+│   │   │   └── migration.sql
+│   │   ├── 20240403160455_added_bible
+│   │   │   └── migration.sql
+│   │   └── migration_lock.toml
+│   ├── schema.prisma
+│   ├── seed-posts.ts
+│   └── seed.ts
+├── README.md
+├── src
+│   ├── app.html
+│   ├── app.pcss
+│   ├── lib
+│   │   ├── bible.db
+│   │   ├── bibleStore.js
+│   │   ├── bibleStructure.js
+│   │   ├── components
+│   │   │   ├── BookButtons.svelte
+│   │   │   ├── ChapterButtons.svelte
+│   │   │   ├── PageTitle.svelte
+│   │   │   └── VerseButtons.svelte
+│   │   ├── database.js
+│   │   ├── db.ts
+│   │   ├── index.js
+│   │   └── params.js
+│   └── routes
+│       ├── +layout.svelte
+│       ├── +page.server.js
+│       ├── +page.svelte
+│       ├── api
+│       │   ├── bible
+│       │   │   ├── +server.ts
+│       │   │   └── [bookId]
+│       │   │       ├── chapters
+│       │   │       │   └── +server.ts
+│       │   │       └── [chapterId]
+│       │   │           └── verses
+│       │   │               └── +server.ts
+│       │   └── posts
+│       │       └── +server.ts
+│       └── books
+│           └── [bookId]
+│               ├── +page.svelte
+│               └── chapters
+│                   └── [chapterId]
+│                       └── +page.svelte
+├── static
+│   └── favicon.png
+├── svelte.config.js
+├── tailwind.config.cjs
+└── vite.config.js
+
+.env Variables:
+SECRET_API_KEY
+DATABASE_URL
