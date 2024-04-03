@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
+	import { fontSize } from '$lib/stores/fontSizeStore';
 
 	let verses = [];
 	let bookName = '';
@@ -32,9 +33,9 @@
 	<p>No verses found.</p>
 {:else}
 	<div class="m-6">
-		<h1 class="text-center text-4xl font-black">{bookName} {chapterNumber}</h1>
+		<h1 class="text-center text-2xl font-black">{bookName} {chapterNumber}</h1>
 		{#each verses as verse}
-			<div class="my-4">
+			<div class="my-4" style="font-size: {$fontSize}px;">
 				<p><strong>{verse.verseNumber}.</strong> {verse.text}</p>
 			</div>
 		{/each}

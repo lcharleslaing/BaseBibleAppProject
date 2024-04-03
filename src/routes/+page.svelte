@@ -15,8 +15,8 @@
 </script>
 
 <div class="m-6">
-	<h1 class="text-2xl font-bold">Bible API Data</h1>
-	<p>This is the data from the API route</p>
+	<h1 class="upp text-center text-4xl font-black">Bible App</h1>
+	<p class="text-center">King James Version Bible</p>
 </div>
 
 <div class="m-4 grid grid-cols-3 gap-1">
